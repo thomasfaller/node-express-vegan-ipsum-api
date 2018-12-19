@@ -4,7 +4,7 @@ const app = express();
 const path = require('path');
 var content = require('./content/content');
 
-const PORT = 5000;
+const PORT = 7777;
 
 app.set('view engine', 'pug');
 
@@ -13,7 +13,7 @@ app.use(sassMiddleware({
   // Options
   src: __dirname,
   dest: path.join(__dirname, 'public'),
-  debug: true,
+  debug: false,
   outputStyle: 'compressed'
 }));
 
