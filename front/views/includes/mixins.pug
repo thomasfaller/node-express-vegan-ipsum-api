@@ -1,0 +1,19 @@
+//- Navigation links
+mixin link(title, emoji, url)
+  li.navigation-link
+    a(href=url, class=active == title ? 'active' : '')= `${title} ${emoji}`
+
+
+//- Title and subtitle container displayed on the left hand side of the Header
+mixin left-wrapper(title, subtitle)
+  .left-wrapper
+    h1.title= message
+    h2.subtitle= subtitle
+
+
+//- Github button link for the navigation
+mixin github-button(url)
+  a.button.is-small(href=url, target='_blank' rel='noopener noreferrer')
+    span.icon.is-small
+      i.fab.fa-github
+    span GitHub

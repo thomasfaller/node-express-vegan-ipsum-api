@@ -1,0 +1,36 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    link(rel='stylesheet',href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous')
+    link(rel='stylesheet', href='css/main.css')
+    title= title
+  body
+    include includes/mixins
+    section.hero
+      .hero-body
+        .container
+          +left-wrapper(message, subtitle)
+          .right-wrapper
+            ul.navigation
+              +link('About', '👨🏼‍🎨', '/about')
+              +link('Generator', '🤖', '/')
+              +link('API', '💪🏻', '/docs')
+              li
+                +github-button('https://www.github.com')
+    section.wrapper
+      .container
+        block content
+    footer.footer
+      .content.has-text-centered
+        p
+          strong VeganIpsum
+          |  by
+          a(href='https://tomthedev.com')  Thomas Faller
+          | . The source code is licensed
+          a(href='http://opensource.org/licenses/mit-license.php')  MIT
+          | .
+
+
+    link(rel='text/javascript', href='js/bundle.js')

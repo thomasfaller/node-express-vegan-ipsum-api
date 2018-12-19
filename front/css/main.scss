@@ -1,0 +1,49 @@
+.hero {
+  background-image: url("../img/green-leaves-banner.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .left-wrapper {
+    float: left;
+
+    .title,
+    .subtitle {
+      color: whitesmoke;
+    }
+  }
+
+  .right-wrapper {
+    float: right;
+
+    .navigation {
+      display: flex;
+      position: absolute;
+      right: 0;
+      top: 25px;
+
+      .navigation-link a {
+        text-align: center;
+        display: block;
+        margin: 0 15px;
+        font-weight: bold;
+        color: whitesmoke;
+
+        &:hover {
+          color: tomato;
+        }
+
+        &.active {
+          border-bottom: 2px solid tomato;
+          color: tomato;
+        }
+      }
+    }
+  }
+}
+
+button#generateRandom {
+  background-image: url("../img/green-leaves-banner.png");
+  background-size: 1200px;
+  box-shadow: 1px 1px 5px darkcyan;
+}
