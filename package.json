@@ -4,7 +4,8 @@
   "description": "This is a 100% animal-cruelty free API.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon front/app"
+    "start": "node front/app",
+    "dev": "nodemon front/app"
   },
   "repository": {
     "type": "git",
