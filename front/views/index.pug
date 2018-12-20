@@ -1,8 +1,15 @@
 extends layout
 block content
-  h2 This is my langing page
-  p
-    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sint expedita quos eos
-    | iusto asperiores qui minus provident? Tenetur esse pariatur natus quod aperiam ipsum
-
-  button#generateRandom.button.is-primary.is-large Click here
+  .container
+    .columns
+      .column.is-half.is-offset-one-quarter.has-text-centered
+        h2.headline This is the VeganIpsum generator ❤️🥬
+        textarea#randomOutput.textarea(placeholder="...your random text will appear here...")
+        .has-text-centered
+          .select
+            select#howManyWords
+              option(value=10) 10 words
+              option(value=15) 15 words
+              option(value=20) 20 words
+          button#generateRandom.button.is-primary Generate random text
+          button#copyToClipboard.button.is-warning Copy

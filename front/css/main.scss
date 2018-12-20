@@ -1,3 +1,5 @@
+$grey: #404040;
+
 .hero {
   background-image: url("../img/green-leaves-banner.png");
   background-position: center;
@@ -9,7 +11,7 @@
 
     .title,
     .subtitle {
-      color: whitesmoke;
+      color: $grey;
     }
   }
 
@@ -27,7 +29,7 @@
         display: block;
         margin: 0 15px;
         font-weight: bold;
-        color: whitesmoke;
+        color: #444;
 
         &:hover {
           color: tomato;
@@ -42,8 +44,47 @@
   }
 }
 
-button#generateRandom {
+section.wrapper {
+  min-height: 100vh;
+  background-color: $grey;
+
+  h2.headline,
+  p {
+    margin-top: 7.5px;
+    color: beige;
+  }
+
+  textarea#randomOutput {
+    margin: 25px 0;
+  }
+
+  select#howManyWords {
+    margin-right: 7.5px;
+  }
+
+  button#generateRandom {
+    margin: 0 7.5px;
+    background-image: url("../img/green-leaves-banner.png");
+    background-size: 1200px;
+    color: $grey;
+    font-weight: bold;
+  }
+
+  button#copyToClipboard {
+    margin-left: 7.5px;
+    color: $grey;
+    font-weight: bold;
+  }
+
+}
+
+footer.footer {
   background-image: url("../img/green-leaves-banner.png");
-  background-size: 1200px;
-  box-shadow: 1px 1px 5px darkcyan;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  p {
+    color: $grey;
+  }
 }

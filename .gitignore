@@ -1,2 +1,3 @@
 # ignore NPM modules.
 node_modules
+.env

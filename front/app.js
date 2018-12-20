@@ -1,10 +1,11 @@
 const express = require('express');
 const sassMiddleware = require('node-sass-middleware');
 const app = express();
+const content = require('./content/content');
 const path = require('path');
-var content = require('./content/content');
-
 const PORT = 7777;
+
+const buildRandomString = require('../back/utils/generator');
 
 app.set('view engine', 'pug');
 
@@ -18,6 +19,7 @@ app.use(sassMiddleware({
 }));
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/scripts', express.static(__dirname + '/public/js'));
 
 app.set('views', path.join(__dirname, 'views'));
 
@@ -29,10 +31,21 @@ app.get('/', (req, res) => {
 app.get('/docs', (req, res) => {
   res.render('docs', content.docs)
 });
+
 app.get('/about', (req, res) => {
   res.render('about', content.about)
 });
 
+app.get('/', (req, res) => {
+  res.render({
+    scripts: ['../back/utils/generator.js']
+  })
+});
+
+
+
+
+// Setting port
 app.listen(PORT, () => {
-  console.log(`Your app is running on https:localhost:${PORT}`);
+  console.log(`Your app is running on https://localhost:${PORT}`);
 })

@@ -5,6 +5,8 @@ html(lang='en')
     link(rel='stylesheet',href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css')
     link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous')
     link(rel='stylesheet', href='css/main.css')
+    link(href="https://clipart.info/images/ccovers/1484942375ios-emoji-cow-face.png", rel="icon")
+
     title= title
   body
     include includes/mixins
@@ -27,10 +29,8 @@ html(lang='en')
         p
           strong VeganIpsum
           |  by
-          a(href='https://tomthedev.com')  Thomas Faller
+          a(href='https://github.com/thomasfaller')  Thomas Faller
           | . The source code is licensed
           a(href='http://opensource.org/licenses/mit-license.php')  MIT
           | .
-
-
-    link(rel='text/javascript', href='js/bundle.js')
+    script(src='bundle.js', async='async')
