@@ -48,6 +48,10 @@ section.wrapper {
   min-height: 100vh;
   background-color: $grey;
 
+  #popup {
+    display: none;
+  }
+
   h2.headline,
   p {
     margin-top: 7.5px;
