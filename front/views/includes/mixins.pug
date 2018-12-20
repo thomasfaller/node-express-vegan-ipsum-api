@@ -1,3 +1,18 @@
+//- Header
+mixin header
+  section.hero
+    .hero-body
+      .container
+        +left-wrapper(message, subtitle)
+        .right-wrapper
+          ul.navigation
+            +link('About', '👨🏼‍🎨', '/about')
+            +link('Generator', '🤖', '/')
+            +link('API', '💪🏻', '/docs')
+            li
+              +github-button('https://www.github.com')
+
+
 //- Navigation links
 mixin link(title, emoji, url)
   li.navigation-link
@@ -24,3 +39,31 @@ mixin popup(text)
   #popup.container.is-fluid
     .notification
       .has-text-centered text
+
+
+//- Footer
+mixin footer
+  footer.footer
+    .content.has-text-centered
+      p
+        strong VeganIpsum
+        |  by
+        a(href='https://github.com/thomasfaller')  Thomas Faller
+        | . The source code is licensed
+        a(href='http://opensource.org/licenses/mit-license.php')  MIT
+        | .
+    .content.has-text-centered
+      p
+        | Powered by
+        |
+        a(href="https://nodejs.org/en/", title="NodeJS") NodeJS
+        | ,
+        |
+        a(href="http://expressjs.com", title="ExpressJS") ExpressJS
+        | ,
+        |
+        a(href="https://pugjs.org", title="PugJS") Pug
+        |
+        | and
+        |
+        a(href="https://bulma.io" title="Bulma") Bulma.
