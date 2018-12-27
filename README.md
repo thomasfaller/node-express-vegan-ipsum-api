@@ -14,20 +14,20 @@ VeganIpsum API is a LoremIpsum text generator that uses vegan-friendly terms. It
 
 You can use this app in different ways:
 
-The Vegan Ipsum generator.
+###The Vegan Ipsum generator.
 
 - Go to https://www.veganipsum.co or click on the Generator link from the Navigation links.
 
 - Pick how many words you want your random text to contain (10, 15 or 20), click on "Generate random text" and voila!
 Additionaly you can click on the "Copy" button to copy the generated text right into your clipboard.
 
-The Vegan Ipsum API.
+###The Vegan Ipsum API.
 
 You can build your request URL the following way
 
 Base URL is `https://www.veganipsum.co/api`
 
-Endpoints:
+###Endpoints:
 
 `/eggs`, `/meat`,`/cheese`,`/grains`,`/brands` will each return a JSON containing a list of terms.
 
