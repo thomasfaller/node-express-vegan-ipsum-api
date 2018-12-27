@@ -11,3 +11,26 @@ VeganIpsum API is a LoremIpsum text generator that uses vegan-friendly terms. It
   I'm considering moving the database of words to MongoDB to allow CRUD operations.
 
 ## Instructions
+
+You can use this app in different ways:
+
+The Vegan Ipsum generator.
+
+- Go to https://www.veganipsum.co or click on the Generator link from the Navigation links.
+
+- Pick how many words you want your random text to contain (10, 15 or 20), click on "Generate random text" and voila!
+Additionaly you can click on the "Copy" button to copy the generated text right into your clipboard.
+
+The Vegan Ipsum API.
+
+You can build your request URL the following way
+
+Base URL is `https://www.veganipsum.co/api`
+
+Endpoints:
+
+`/eggs`, `/meat`,`/cheese`,`/grains`,`/brands` will each return a JSON containing a list of terms.
+
+You can browse the endpoints directly in the browser or make a http call to retrieve the words.
+
+You can get a full list of the terms at the `/full-list` endpoint.

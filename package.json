@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node front/app.js",
-    "dev": "concurrently --kill-others \"npm run watchify\" \"nodemon front/app.js\"",
+    "dev": "concurrently --kill-others \"npm run watchify\" \"nodemon front/app.js\" \"nodemon back/api/api.js\"",
     "watchify": "watchify front/public/js/main.js -o front/public/bundle.js",
     "bundle": "browserify front/public/js/main.js -o front/public/bundle.js"
   },
