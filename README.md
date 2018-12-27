@@ -33,4 +33,19 @@ Endpoints:
 
 You can browse the endpoints directly in the browser or make a http call to retrieve the words.
 
+For example, browsing to `https://www.veganipsum.co/api/cheese` will give you the following output:
+
+``` json
+{
+  0: "daiya",
+  1: "follow your heart ",
+  2: "teese",
+  3: "sheese ",
+  4: "vegan rella",
+  5: "cheezly ",
+  6: "parma",
+  7: "soymage vegan parmesan "
+}
+```
+
 You can get a full list of the terms at the `/full-list` endpoint.
