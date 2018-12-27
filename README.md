@@ -28,7 +28,7 @@ You can use this app in different ways:
 
 You can build your request URL the following way
 
-Base URL is `https://mighty-falls-46225.herokuapp.com/api`
+Base URL is `https://www.veganipsum.co/api`
 
 ### Endpoints:
 
@@ -36,7 +36,7 @@ Base URL is `https://mighty-falls-46225.herokuapp.com/api`
 
 You can browse the endpoints directly in the browser or make a http call to retrieve the words.
 
-For example, browsing to `https://mighty-falls-46225.herokuapp.com/api/cheese` will give you the following output:
+For example, browsing to `https://www.veganipsum.co/api/cheese` will give you the following output:
 
 ```javascript
 {

@@ -4,7 +4,7 @@
   "description": "This is a 100% animal-cruelty free API.",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently --kill-others \"npm run browserify\" \"node front/app.js\" \"node back/api/api.js\"",
+    "start": "node front/app.js",
     "dev": "concurrently --kill-others \"npm run watchify\" \"nodemon front/app.js\" \"nodemon back/api/api.js\"",
     "watchify": "watchify front/public/js/main.js -o front/public/bundle.js",
     "bundle": "browserify front/public/js/main.js -o front/public/bundle.js"
