@@ -21,13 +21,14 @@ You can use this app in different ways:
 - Go to https://www.veganipsum.co or click on the Generator 🤖 link from the Navigation links.
 
 - Pick how many words you want your random text to contain (10, 15 or 20), click on "Generate random text" and voila!
-Additionaly you can click on the "Copy" button to copy the generated text right into your clipboard.
+
+- Additionaly you can click on the "Copy" button to copy the generated text right into your clipboard.
 
 ### The Vegan Ipsum API.
 
 You can build your request URL the following way
 
-Base URL is `https://www.veganipsum.co/api`
+Base URL is `https://mighty-falls-46225.herokuapp.com/api`
 
 ### Endpoints:
 
@@ -35,7 +36,7 @@ Base URL is `https://www.veganipsum.co/api`
 
 You can browse the endpoints directly in the browser or make a http call to retrieve the words.
 
-For example, browsing to `https://www.veganipsum.co/api/cheese` will give you the following output:
+For example, browsing to `https://mighty-falls-46225.herokuapp.com/api/cheese` will give you the following output:
 
 ```javascript
 {
