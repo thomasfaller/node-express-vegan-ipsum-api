@@ -35,16 +35,16 @@ You can browse the endpoints directly in the browser or make a http call to retr
 
 For example, browsing to `https://www.veganipsum.co/api/cheese` will give you the following output:
 
-``` json
+```json
 {
-  0: "daiya",
-  1: "follow your heart ",
-  2: "teese",
-  3: "sheese ",
-  4: "vegan rella",
-  5: "cheezly ",
-  6: "parma",
-  7: "soymage vegan parmesan "
+    0: "daiya",
+    1: "follow your heart ",
+    2: "teese",
+    3: "sheese ",
+    4: "vegan rella",
+    5: "cheezly ",
+    6: "parma",
+    7: "soymage vegan parmesan "
 }
 ```
 
