@@ -1,5 +1,7 @@
 # VeganIpsum API ❤️🐄🐓🐑🐟
 
+[veganipsum.co](https://www.veganipsum.co) (hosted on Heroku)
+
 Powered by Node, Express, Pug and Bulma
 
 VeganIpsum API is a LoremIpsum text generator that uses vegan-friendly terms. It comprises:
