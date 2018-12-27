@@ -35,7 +35,7 @@ You can browse the endpoints directly in the browser or make a http call to retr
 
 For example, browsing to `https://www.veganipsum.co/api/cheese` will give you the following output:
 
-```json
+```javascript
 {
     0: "daiya",
     1: "follow your heart ",
