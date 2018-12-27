@@ -45,6 +45,7 @@ $grey: #404040;
 }
 
 section.wrapper {
+  padding: 55px 0;
   min-height: 55vh;
   background-color: $grey;
 
@@ -52,10 +53,50 @@ section.wrapper {
     display: none;
   }
 
-  h2.headline,
-  p {
-    margin-top: 7.5px;
+  h1.title,
+  h2.title,
+  h3.title,
+  h4.title,
+  p.text {
+    font-weight: 300;
     color: beige;
+  }
+
+  h1.title {
+    font-size: 2.25rem;
+  }
+
+  h2.title {
+    font-size: 2rem;
+  }
+
+  h3.title {
+    font-size: 1.825rem;
+  }
+
+  h4.title {
+    font-size: 1.5rem;
+  }
+
+  p.text,
+  ul>p.text {
+    font-size: 1.115rem;
+  }
+
+  ul {
+    margin-left: 1rem;
+    color: beige;
+    list-style: inside;
+  }
+
+  samp {
+    font-weight: 100;
+  }
+
+  pre.json {
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 550px;
   }
 
   textarea#randomOutput {

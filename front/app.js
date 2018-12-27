@@ -3,7 +3,10 @@ const sassMiddleware = require('node-sass-middleware');
 const app = express();
 const content = require('./content/content');
 const path = require('path');
-const PORT = 7777;
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 7777;
+}
 
 const buildRandomString = require('../back/utils/generator');
 
@@ -42,10 +45,7 @@ app.get('/', (req, res) => {
   })
 });
 
-
-
-
 // Setting port
-app.listen(PORT, () => {
-  console.log(`Your app is running on https://localhost:${PORT}`);
+app.listen(port, () => {
+  console.log(`Your app is running on https://localhost:${port}`);
 })

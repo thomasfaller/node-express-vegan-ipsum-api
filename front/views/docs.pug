@@ -1,8 +1,72 @@
 extends layout
 
 block content
-  h3 This is my 'Documentation' content
-  p
-    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sint expedita quos eos
-    | iusto asperiores qui minus provident? Tenetur esse pariatur natus quod aperiam ipsum,
-    | in vel quo suscipit maiores.
+  p.text Powered by Node, Express, Pug and Bulma
+  p.text VeganIpsum API is a LoremIpsum text generator that uses vegan-friendly terms. It comprises:
+  ul
+    li.text A back-end consisting of an API serving different endpoints to generate random and selective output.
+    li.text A front-end site hosting information and a random text generator.
+  br
+  h2.title Instructions
+  p.text You can use this app in different ways...
+  br
+  h3.title The Vegan Ipsum generator
+  ul
+    li.text
+      | Go to
+      |
+      a(href='https://www.veganipsum.co') https://www.veganipsum.co
+      |
+      | or click on the Generator link from the Navigation links.
+    li.text Pick how many words you want your random text to contain (10, 15 or 20), click on "Generate random text" and voila!
+    li.text Additionaly you can click on the "Copy" button to copy the generated text right into your clipboard.
+  br
+  h3.title The Vegan Ipsum API
+  p.text You can build your request URL the following way
+  p.text
+    | Base URL is
+    |
+    samp https://www.veganipsum.co/api
+  br
+  h4.title Endpoints:
+  p.text
+    samp /eggs
+    |,
+    |
+    samp /meat
+    |,
+    |
+    samp /cheese
+    |,
+    |
+    samp /grains
+    |,
+    |
+    samp /brands
+    |
+    | will each return a JSON containing a list of terms.
+  p.text
+    | For example, browsing to
+    |
+    samp https://www.veganipsum.co/api/cheese
+    |
+    | will give you the following output:
+  br
+  pre.json
+    | {
+    |   0: "daiya",
+    |   1: "follow your heart ",
+    |   2: "teese",
+    |   3: "sheese ",
+    |   4: "vegan rella",
+    |   5: "cheezly ",
+    |   6: "parma",
+    |   7: "soymage vegan parmesan "
+    | }
+  br
+  p.text
+    | You can get a full list of the terms at the
+    |
+    samp /full-list
+    |
+    | endpoint.
