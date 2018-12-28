@@ -1,4 +1,4 @@
-# VeganIpsum API ❤️🐄🐓🐑🐟
+# VeganIpsum API ❤️ 🐄 🐓 🐑 🐟
 
 [veganipsum.co](https://www.veganipsum.co) (hosted on Heroku)
 
@@ -51,4 +51,11 @@ For example, browsing to `https://www.veganipsum.co/api/cheese` will give you th
 }
 ```
 
-You can get a full list of the terms at the `/full-list` endpoint.
+You can get a full list of the terms at the `/full-list` endpoint and to `/full` to vizualise the full JSON object containing all the categories.
+
+By default your browser will probably display raw JSON data, making it difficult to scan and use.
+
+You can use a browser extension to prettify the JSON right into the browser. Some useful extensions include the following:
+
+- [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc) for Google Chrome.
+- [JSONView](https://addons.mozilla.org/en-US/firefox/addon/jsonview/) for Mozilla Firefox.
