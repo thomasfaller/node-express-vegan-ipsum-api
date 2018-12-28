@@ -3,14 +3,14 @@ mixin header
   section.hero
     .hero-body
       .container
-        +left-wrapper(message, subtitle)
-        .right-wrapper
-          ul.navigation
-            +link('About', '👨🏼‍🎨', '/about')
-            +link('Generator', '🤖', '/')
-            +link('API', '💪🏻', '/docs')
-            li
-              +github-button('https://github.com/thomasfaller/node-express-vegan-ipsum-api')
+        .columns.is-desktop
+          +left-wrapper(message, subtitle)
+          .right-wrapper.column.is-full-mobile.is-one-third-desktop
+            ul.navigation.is-flex-tablet
+              +link('About', '👨🏼‍🎨', '/about')
+              +link('Generator', '🤖', '/')
+              +link('API', '💪🏻', '/docs')
+              +link('Github', '🐱', 'https://github.com/thomasfaller/node-express-vegan-ipsum-api')
 
 
 //- Navigation links
@@ -21,7 +21,7 @@ mixin link(title, emoji, url)
 
 //- Title and subtitle container displayed on the left hand side of the Header
 mixin left-wrapper(title, subtitle)
-  .left-wrapper
+  .left-wrapper.column.is-full-mobile.is-two-thirds-desktop
     h1.title= message
     h2.subtitle= subtitle
 

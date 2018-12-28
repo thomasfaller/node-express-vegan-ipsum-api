@@ -7,7 +7,6 @@ $grey: #404040;
   background-repeat: no-repeat;
 
   .left-wrapper {
-    float: left;
 
     .title,
     .subtitle {
@@ -16,17 +15,13 @@ $grey: #404040;
   }
 
   .right-wrapper {
-    float: right;
 
     .navigation {
-      display: flex;
-      position: absolute;
-      right: 0;
-      top: 25px;
+      justify-content: space-evenly;
 
       .navigation-link a {
         text-align: center;
-        display: block;
+        display: table-cell;
         margin: 0 15px;
         font-weight: bold;
         color: #444;
@@ -131,5 +126,36 @@ footer.footer {
 
   p {
     color: $grey;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero {
+
+    .left-wrapper {
+      text-align: center;
+
+      .title,
+      .subtitle {
+        color: black;
+      }
+    }
+
+    .right-wrapper {
+
+      .navigation {
+
+        text-align: -webkit-center;
+
+        .navigation-link {
+          margin: 10px 0;
+
+          a,
+          a>span {
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
   }
 }
