@@ -1,8 +1,9 @@
-const express = require('express');
-const sassMiddleware = require('node-sass-middleware');
-const app = express();
-const content = require('./content/content');
-const path = require('path');
+const express = require('express'),
+  sassMiddleware = require('node-sass-middleware'),
+  app = express(),
+  content = require('./content/content'),
+  path = require('path');
+
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 7777;
