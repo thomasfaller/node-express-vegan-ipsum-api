@@ -1,8 +1,8 @@
 # VeganIpsum API ❤️ 🐄 🐓 🐑 🐟
 
-[veganipsum.co](https://www.veganipsum.co) (hosted on Heroku)
+[veganipsum.co](https://vegan-ipsum-api.herokuapp.com/) (hosted on Heroku)
 
-*At the moment, the domain is rather slow to connect to the Heroku app, not sure why. You can also access the web app at https://hidden-headland-77471.herokuapp.com*
+*At the moment, the domain is rather slow to connect to the Heroku app, not sure why. You can also access the web app at https://vegan-ipsum-api.herokuapp.com/*
 
 Powered by Node, Express, Pug and Bulma
 
